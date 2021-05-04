@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-
+import CharacterComponent from "./components/characterComponent";
+// import CharacterComponent from "./components/characterComponent";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+     <CharacterComponent description={'bart'}
+                         image={'https://upload.wikimedia.org/wikipedia/ru/2/29/Bart_Simpson.gif'}/>
+     <CharacterComponent description={'liza'}
+                         image={'https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png'}/>
+
     </div>
   );
 }
